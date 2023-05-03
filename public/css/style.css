@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f3f3f3;
+    padding: 1rem;
+}
+#to-do-task{
+    margin-top: 3rem;
+}
+.container{
+    max-width: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 1rem;
+    background-color: rgb(243, 236, 236);
+    border-radius: 10px;
+}
+ul{
+    list-style: none;
+}
+.mt-1{
+    margin-top: 1rem;
+}
+.pd-1{
+    padding: 1rem;
+}
+.center{
+    text-align: center;
+}
+
+.btn{
+    border: none;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: all 1s;
+    width: 100%;
+}
+.btn-trash, .btn-edit{
+    border-radius: 50%;
+}
+.btn-edit:hover{
+    background-color: aquamarine;
+}
+.btn-trash:hover{
+    background-color: #FDB750;
+}
+.orange-btn{
+    background-color: #FDB750;
+    border: 1px solid orange;
+    flex-basis: 20%;
+}
+.orange-btn:hover{
+    background-color: #FD7F20;
+}
+
+.input-add-task{
+    padding: 0.5rem;
+    border: 1px solid orange;
+    outline: none;
+    flex-basis: 80%;
+}
+
+.input-group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-color: white;
+}
+
+.task-container{
+    background-color: white;
+}
+.list-item:not(:last-child) {
+    margin-bottom: 0.5rem;
+    padding: 0.3rem 0;
+    border-bottom:1px solid rgb(219, 214, 214);
+}
+.task{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.3rem;
+}
+.task .task-content,
+.task select{
+    flex-basis: 85%;
+    max-width: 85%;
+    word-wrap: break-word;
+}
+.task select{
+    max-width: 40%;
+}
+.task form,
+.task button{
+    flex-basis: 15%;
+}
+
+.count-footer{
+    border-top: 1px solid rgb(177, 173, 173);
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    background-color: white;
+    padding: 0.3rem;
+    font-size: 0.9rem;
+}
